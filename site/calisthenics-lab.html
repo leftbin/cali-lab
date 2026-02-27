@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE CALISTHENICS LAB | CALI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#1a1310",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">exercise</span>
+</div>
+<h2 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white">CALI</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#plans">Plans</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#trainers">Trainers</a>
+<a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#schedule">Schedule</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm uppercase tracking-wider transition-all">
+                        Sign Up
+                    </button>
+</div>
+</div>
+</header>
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale contrast-125 brightness-75" data-alt="Athlete performing a muscle up outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrTKJ_ryxQs1RgyXxpV96IhRGYBilbppOp8U37HwI5jI0DWWnNHg_35LKOg9b70qvNw9RpXcisL-qS9PawOU5APXoXFOyR7pBLoKyk6C7yjd60W0BxO7mN-8J56LWTdBxCJrnPfoVmFGyFEUmWtHS9EWZyfv1Hsml-RW75ZYiOqJ5DGBhMWsgYbcWkLMfeScr4u_YmP3Uk4rjQHzNs5ZVV7iwhD9ZhLSZe0Z9XqUpMRIxZ598xgeq9pDdpLLMvftEYuXHcohVRzym"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl">
+<div class="inline-block bg-primary text-white px-3 py-1 text-xs font-black uppercase tracking-[0.2em] mb-6">Established 2024</div>
+<h1 class="text-6xl md:text-8xl font-black leading-none mb-6 text-white tracking-tighter">
+                        THE <span class="text-primary">CALISTHENICS</span> LAB
+                    </h1>
+<p class="text-xl md:text-2xl text-slate-300 font-medium mb-10 leading-relaxed border-l-4 border-primary pl-6">
+                        By The Community, For The Community. Experiment. Evolve. Repeat.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-lg font-black text-lg uppercase tracking-tighter hover:scale-105 transition-transform">
+                            Start Training Now
+                        </button>
+<button class="border-2 border-white/30 text-white px-10 py-4 rounded-lg font-black text-lg uppercase tracking-tighter hover:bg-white hover:text-background-dark transition-all">
+                            View Plans
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-slate-50 dark:bg-black/10" id="programs">
+<div class="max-w-7xl mx-auto text-center">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">What You Get</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mt-2 mb-16">TRAINING PROGRAMS</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 text-left">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">fitness_center</span>
+<h4 class="text-lg font-bold mb-2">Strength &amp; Conditioning</h4>
+<p class="text-slate-500 text-sm">Calisthenics Fundamentals &bull; Weight Loss &amp; Fat Burning</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 text-left">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">sports_gymnastics</span>
+<h4 class="text-lg font-bold mb-2">Handstands &amp; Balance</h4>
+<p class="text-slate-500 text-sm">Core &amp; Mobility Development &bull; Advanced Skill Progressions</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 text-left">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">groups</span>
+<h4 class="text-lg font-bold mb-2">Small Batch Focus</h4>
+<p class="text-slate-500 text-sm">Result-driven programming &bull; Beginner-friendly progressions</p>
+</div>
+</div>
+<div class="mt-12 flex flex-wrap justify-center gap-6">
+<div class="bg-primary/10 px-6 py-3 rounded-lg border border-primary/20">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Coming Soon: CALI Rhythm — Zumba</span>
+</div>
+<div class="bg-primary/10 px-6 py-3 rounded-lg border border-primary/20">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Coming Soon: CALI Power — Yoga</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark" id="trainers">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Certified. Experienced. National-Level Athletes</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mt-2">MEET THE TRAINERS</h2>
+</div>
+<p class="max-w-md text-slate-500 dark:text-slate-400">Our certified professionals are here to guide you through every pull-up, dip, and planche.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl p-8 transition-all hover:border-primary">
+<div class="aspect-square rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 group-hover:ring-primary/50 transition-all">
+<img class="w-full h-full object-cover" data-alt="Aman calisthenics trainer portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqpJ0MMUhzxdSrWBbyuR0FiwjarDN8kk3NPgFVhtE-rHgyyJxGQ7MpcbA1h3n8WuGwj8tb5vqRMTnI9WSNRpCQssUwhAAlNmhH2QQfovHzNAhV8wKei9rD8Lhxu0GZaAjaWojF02iUUD_yzYl1Vf-i6jqCjceeJoE1iI5f5GKR0J6WRWnHtqFkURXJiksCLGnaLhUXg1XqaJ9nZPYC2Ud2_yR_-xGsHHMLTTcL2ndjt2oUcxXy_F0O4RJxRXauCpe92OndPrafpbGP"/>
+</div>
+<h3 class="text-2xl font-black">AMAN</h3>
+<p class="text-primary font-bold mb-4 uppercase text-sm tracking-widest">Calisthenics Expert</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">10+ years of experience. 3x National Champion. Represented India 3 times. Master of static holds and explosive movements.</p>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">fitness_center</span>
+<span class="material-symbols-outlined text-primary">sports_gymnastics</span>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl p-8 transition-all hover:border-primary">
+<div class="aspect-square rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 group-hover:ring-primary/50 transition-all">
+<img class="w-full h-full object-cover" data-alt="Shiva strength specialist portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzb_zMz43okaq6P8VqXcxeXADT-2mkXIduXuiuwRmJJndOUZajNyBYAYOVC9JsTI984LPG0uBKdgKzX2gpDSnXfW8ha43AX9U9PxU5bSYFjy1UhTp0w0mIM3kdCTGcN_u9ugArAiXShFyn5pO5-lqKod8_pO-S2fjP6At_ZljS-2smm81k6pTk5pYpoZRLrndHBUPXazouJx2HvzcvFLJnP54P0uH7p5Pt_Oc9pEI3Twr8VKk2oxgzGn7AFj1oQQFjy06tqgg7Rm1s"/>
+</div>
+<h3 class="text-2xl font-black">SHIVA</h3>
+<p class="text-primary font-bold mb-4 uppercase text-sm tracking-widest">Strength Specialist</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">5+ years of training experience. Expert in progressive overload and high-intensity interval calisthenics for maximum power.</p>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<span class="material-symbols-outlined text-primary">timer</span>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-white dark:bg-background-dark border border-slate-200 dark:border-primary/20 rounded-xl p-8 transition-all hover:border-primary">
+<div class="aspect-square rounded-full overflow-hidden mb-6 ring-4 ring-primary/20 group-hover:ring-primary/50 transition-all">
+<img class="w-full h-full object-cover" data-alt="Ankush bodyweight coach portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN_-hl0Clum9K_z-MKQ0s8kxDBbkz0yRF3ryxtnL3s95Hfc3WnDfW4xUCUS3prILcJUsmxmet6uwK3FG5HOtMGq6srqsP3ItwfP-C9pb86G8EMqFdlv7OaeScs57SLEdH1jscnqCJPTROHu520sPAeME3cZ4dlSArv6Ibg2WQ3e1emSqBYz4Is0_Omn64px6tML2EC6-MXM7GY1euHmQrEhf-AU7sNzTf5K1vC4kbdcUJfE_eoTLbwtpY6wbcOiHSxSH81eo-6OS8T"/>
+</div>
+<h3 class="text-2xl font-black">ANKUSH</h3>
+<p class="text-primary font-bold mb-4 uppercase text-sm tracking-widest">Calisthenics Trainer</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Focuses on mobility, flexibility, and foundational strength for beginners to advanced athletes.</p>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">accessibility_new</span>
+<span class="material-symbols-outlined text-primary">monitor_heart</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-slate-100 dark:bg-black/20" id="plans">
+<div class="max-w-7xl mx-auto text-center">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Flexible Pricing</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mt-2 mb-16">MEMBERSHIP PLANS</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-center">
+<h4 class="text-xl font-bold mb-2">Monthly</h4>
+<div class="flex items-baseline mb-6">
+<span class="text-3xl font-black text-primary">₹</span>
+<span class="text-5xl font-black">7,777</span>
+</div>
+<ul class="space-y-3 mb-8 text-sm text-slate-500 dark:text-slate-400 w-full text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Unlimited Access</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> All Batches</li>
+</ul>
+<button class="w-full py-3 bg-primary/10 hover:bg-primary text-primary hover:text-white font-bold rounded-lg transition-all">SIGN UP</button>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border-2 border-primary relative flex flex-col items-center shadow-2xl shadow-primary/20">
+<div class="absolute -top-4 bg-primary text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Popular Choice</div>
+<h4 class="text-xl font-bold mb-2">3-Months</h4>
+<div class="flex items-baseline mb-6">
+<span class="text-3xl font-black text-primary">₹</span>
+<span class="text-5xl font-black">22,222</span>
+</div>
+<ul class="space-y-3 mb-8 text-sm text-slate-500 dark:text-slate-400 w-full text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Unlimited Access</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Personal Goal Setting</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 1 Free Workshop</li>
+</ul>
+<button class="w-full py-3 bg-primary text-white font-bold rounded-lg transition-all shadow-lg shadow-primary/30">SIGN UP</button>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-center">
+<h4 class="text-xl font-bold mb-2">6-Months</h4>
+<div class="flex items-baseline mb-6">
+<span class="text-3xl font-black text-primary">₹</span>
+<span class="text-5xl font-black">44,444</span>
+</div>
+<ul class="space-y-3 mb-8 text-sm text-slate-500 dark:text-slate-400 w-full text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Unlimited Access</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Personalized Plan</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> CALI T-Shirt</li>
+</ul>
+<button class="w-full py-3 bg-primary/10 hover:bg-primary text-primary hover:text-white font-bold rounded-lg transition-all">SIGN UP</button>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-center">
+<h4 class="text-xl font-bold mb-2">1-Year</h4>
+<div class="flex items-baseline mb-6">
+<span class="text-3xl font-black text-primary">₹</span>
+<span class="text-5xl font-black">77,777</span>
+</div>
+<ul class="space-y-3 mb-8 text-sm text-slate-500 dark:text-slate-400 w-full text-left">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Pay for 10, Get 2 Free</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Advanced Coaching</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Nutrition Guide</li>
+</ul>
+<button class="w-full py-3 bg-primary/10 hover:bg-primary text-primary hover:text-white font-bold rounded-lg transition-all">SIGN UP</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark" id="schedule">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Training Hours</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mt-2 mb-8">CLASS SCHEDULE</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+                        We offer multiple batches to fit your busy lifestyle. Whether you are an early bird or a night owl, we have a spot for you in the lab.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 p-6 bg-white dark:bg-background-dark border-l-4 border-primary rounded-r-xl shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">wb_sunny</span>
+<div>
+<h4 class="text-lg font-bold">MORNING BATCHES</h4>
+<p class="text-slate-500">6:30–7:30 AM &bull; 7:30–8:30 AM &bull; 9:00–10:00 AM</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-6 bg-white dark:bg-background-dark border-l-4 border-primary rounded-r-xl shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">dark_mode</span>
+<div>
+<h4 class="text-lg font-bold">EVENING BATCHES</h4>
+<p class="text-slate-500">6:00–7:00 PM &bull; 7:00–8:00 PM &bull; 8:00–9:00 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-6 bg-white dark:bg-background-dark border-l-4 border-primary rounded-r-xl shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">weekend</span>
+<div>
+<h4 class="text-lg font-bold">WEEKEND BATCHES (SAT / SUN)</h4>
+<p class="text-slate-500">9:00–10:00 AM only</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+<img class="relative z-10 w-full h-[400px] object-cover rounded-2xl shadow-2xl grayscale contrast-110" data-alt="Interior of a modern calisthenics gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZcfC0dYzgp5unbGvv1POqMD4yIGhZY76NB0iPM30Fp9nEV4KGFl5sh6bi-oVYjyWr3nEy6vFuDlpANvvTK9FMxVEvX3qBCSS-FC0WxntLQseko8O47-J9swEWlj3il1CUzW-V4bihbBepeRifBv2Cg0ehXHPmKMWNAt_Lv93aUipNTJ3pAOElkpUNT9z7A9wz0Qcg3mPo-hjjjPd70xmkxDgZA7T9EROFE_-_TGt9-ScQc6pFXUBp2A-ELULl21teKgqsoV0Kkex-"/>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-primary/5">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Success Stories</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mt-2 uppercase">OUR CLIENT REVIEW</h2>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-background-dark p-10 rounded-2xl shadow-xl relative group">
+<span class="material-symbols-outlined absolute top-6 right-8 text-6xl text-primary/10 group-hover:text-primary/20 transition-colors">format_quote</span>
+<div class="flex items-center gap-4 mb-8">
+<img class="size-16 rounded-full object-cover grayscale" data-alt="Satisfied client avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTWqhVgvy-2SP90n69Nq8tba2QUxjQyc89lELWY6irzyC8-DigHoGruEgBR34CDjkNU08Ua6LyIH1WLwSRQpUfkToTDDE_B-UL-0MYD14RwUXztWOAaiQaBxzo01Xyx10TqMvB2JfEhHNB1U0zNkPImnxMqPa0z6AdBou8A82PEy-yiRAcivtZ5Dv8aF8u48KApgdr5k5pznwMmLxE3Bx6YgVweg62TaJHTkoyO0j5Ud8G4s58S4geSCiamlv0uaYr7c8HpN4nDOX-"/>
+<div>
+<h4 class="font-black text-lg">Rahul V.</h4>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+</div>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 italic leading-relaxed">"The transformations here are real. I started with zero pull-ups, and in 3 months, I'm already doing muscle-ups. The community is incredibly supportive."</p>
+</div>
+<div class="bg-white dark:bg-background-dark p-10 rounded-2xl shadow-xl relative group">
+<span class="material-symbols-outlined absolute top-6 right-8 text-6xl text-primary/10 group-hover:text-primary/20 transition-colors">format_quote</span>
+<div class="flex items-center gap-4 mb-8">
+<img class="size-16 rounded-full object-cover grayscale" data-alt="Female athlete testimonial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIPuPbkQDn3-kObeQGuse_pnW2bYiFyEGykAaHReUIE_pK4l8_KCw2-LqJpLANEA9JDWfjn29W38dxx2IbkhE1SJyowIiAKvtc6ynsXxICIe__I1g6tYs9vq_YVwJNTqyQdrWjoFNx-v_UyeWw-hJC1kHeyRsPpPzpPIABx2XXhbcLHrJ6w5mkWsp6VnGlwULAuz3InMBELKnqvzu8os-qy6qQksP_1iymrGpPUzduc35ivgXtGZGaTZixJR3SW-Y8vfKPgdYH1GEt"/>
+<div>
+<h4 class="font-black text-lg">Priya S.</h4>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+</div>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 italic leading-relaxed">"CALI is more than a gym. It's where I found my strength. The trainers push you but also care about your form and progress. Best decision I made!"</p>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Community First</span>
+<h2 class="text-4xl md:text-6xl font-black tracking-tight mt-2 uppercase">WE ARE MORE THAN A TRAINING SPACE</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+<div class="col-span-2 row-span-2 rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-105" data-alt="Community group training session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt0Ps2L6G4yofy-V20IY1q-cJKewdDs4eiaYZMoGpC1IjgMXOSGHAJqKZbuAGcizVa98HWoog0ZZ88JU_ZwBB52xrFM4AiRuIUF1tjM6T5D71ErnUMiPo1zwBJxtiJnnsxAbfvwhpa4GlktAINZjQhmIEe6G8NBD8lu7L-Q18lZQEz7QWh2xTRBcRUrERrXr3kAkIdYfWNzMXaFSXdpV7T1-bXK2OSTdiHStj996zbV332fAt6UJCax3aCVHHS8dr_x5Ce44aaS2aN"/>
+</div>
+<div class="rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-105" data-alt="Close up of gym equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxLx-4EB8yqZAY1R8k0JuI6gpsp0Eh7cJ8b-a4At4w4qUkzuxffqGHlgsT2LgQzCl0GiTu9IsPJ7FQXWT5nOlSk4Xmjea7OnYWAVRcz3Ek2rTdDt12fPHD6eIFsQVvjF3ucRi19YtVlrtJQv81-tgw7YwkdFXRwEemSltl9WEu1JQD2ADa9psdo7h4eMX5J86hoYVHEkSLLw_uQ3ykfU2L-YDGkUPJzXrpQkDxBQ_Gm6EP6M9mr0nhuz_whPjo-hEmLuq1JdZusixn"/>
+</div>
+<div class="rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-105" data-alt="Athlete hanging from bars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHoumH8XqrtZM764bWAe6iqCjqpKlBrrnfkhHschKksIEAAhAdl1zvxuiMuFI-n732PLXmHHGn_NqybI2wEAIn-Ohrzj15Bf0cBeWdNJLYUDjYC5RJJtt4NK6g2vytJ0NQBg5ioxrmaz9HPIDsm7h6_Uo89qUKqK249vyzult1rQZyfhXm3APNNfsIqTdbonfbU4iU2veZuaz3oTQ1S7Pnwv6-3k0UtRhspPYpPJumRJATIdXK6RsD8rffnmibrPBfbiA10FdugDrI"/>
+</div>
+<div class="col-span-2 rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-105" data-alt="Team workout in action" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7keYXlDyBMhp1Jyrh3OODLl7iFI8DJh6Acme7lvo9x4fQfgF0xCu34dsyuguOyK6QZjbGRm6GScWhNssKsI7kzvu-AEPXp__f2_KL5PTU_c58i5ZzxTJ35nhIk8dc5Wk9CtgxyCElNqBScwRRe6psmi1U4aEbYI0w5qMv0qpGJfAFbbGyuKrvFDkCxFurQNIVV_X7mW5H7KIc6Rkyrn5F87SHx3PIzo5y1GVJNLs4z0ohiubj7Qv5pBTVVcFCDb2drYTG8dnXSnsD"/>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-900 text-white py-20 px-6 md:px-20 border-t-8 border-primary">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-4xl text-primary">exercise</span>
+<h2 class="text-3xl font-black tracking-tighter">CALI</h2>
+</div>
+<p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                            By the community, for the community. Building strength, discipline, and bodyweight mastery. Experiment. Evolve. Repeat.
+                        </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="size-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">call</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-black uppercase tracking-widest text-sm mb-8">Quick Links</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#plans">Pricing Plans</a></li>
+<li><a class="hover:text-primary transition-colors" href="#trainers">Our Trainers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#schedule">Schedule</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-black uppercase tracking-widest text-sm mb-8">Location</h4>
+<p class="text-slate-400 mb-4">Hitec City, Hyderabad</p>
+<p class="text-primary font-bold">+91 88267 62234</p>
+<a class="inline-block mt-4 text-sm text-slate-400 hover:text-primary transition-colors border border-white/20 px-4 py-2 rounded-lg" href="brochures/cali-lab-brochure.pdf" download>Download Brochure</a>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 uppercase tracking-widest">
+<p>&copy; 2025 CALI CALISTHENICS LAB. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

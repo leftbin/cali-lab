@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YOGI LAB | Cali Fitness Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase">YOGI LAB</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#classes">Classes</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#instructors">Instructors</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#plans">Plans</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#schedule">Schedule</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#community">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="hidden sm:block bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm uppercase tracking-wider">Join Now</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Serene yoga practitioner in a high-contrast studio setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARP80hdY6LC-hGwIuJcPXPG5qR5IbXwVLimcDQNkuZZGewd6UJGfys-vZS2FZ2Cm_pM2kXpgnpNPBXic1-sXrWT3pzy4ndu2xJGArBki014RNTm9hju3PALN-MDAksUryWkR8LvhplJOPZPs52mwB2pJDsPiywcRfQ19av_Wy0FpPr4ZzY1VMV8rFw-IocQ4Y-dqWgU6OaG0Bj-jc0l0S1AOH4oyG_tE16ygja9DwREGVhWUqHBOuipW5p1WN5bIl_rlwpCq8E-gql');"></div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<span class="text-primary font-bold tracking-[0.5em] uppercase mb-4 block">CALI FITNESS LAB PRESENTS</span>
+<h1 class="text-white text-5xl md:text-8xl font-black leading-tight tracking-tighter mb-6 uppercase">
+                        YOGI LAB:<br/>FIND YOUR FLOW
+                    </h1>
+<p class="text-slate-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">
+                        Experience a calm yet disciplined practice designed to push your limits and center your mind.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 uppercase">
+                            View Schedule
+                        </button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all uppercase">
+                            Our Method
+                        </button>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 max-w-7xl mx-auto" id="instructors">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-4xl font-black uppercase tracking-tighter">Meet the Instructors</h2>
+<div class="w-20 h-1.5 bg-primary mt-4"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-transparent hover:border-primary">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Elena - Yoga instructor profile" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANn_1AHxJOCML7eHSwW3TRlHG2EUk34D_O2k9OklT7RcJL7LOpvePF2d_b-U2V15sZWaL-d_5YogVVXj6rG-16Byddc51cquWqghE6W6jbusqx-AZwH2Bxe0ZL_BJ7ARrFyT3nCznwUcg4w4AJTn9myzMBdCTxAWowLcYLih6OPAnMOotQljX73a7iCWSr8qVOm0RnoybK-pSbLdg-oDCO4jZdWEXlRyFNlmnazUBHiISG3yCR-JEgCVeczpSlRQr0SVvh49-oy_ro');"></div>
+</div>
+<h3 class="text-2xl font-bold uppercase">Elena Vance</h3>
+<p class="text-primary font-bold tracking-widest text-sm uppercase">Vinyasa Flow Specialist</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-transparent hover:border-primary">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Marcus - Hatha Yoga instructor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCa5yh1r-jEpMuE5iblw5o2-tMjm6-hA2uS_Fv9CeckaGepbIdDdwUHwV5VzOvg9dcdQyekDWD6sstwVbl_dCUCkp9b2nx6lkA_S3Y2g6RIy8IMJeb1q2SmqTNGt3twfD7-JMtiRLhutmrJgKpFPuPRjbLa_otrzYtL84g1jeSIfrWeHGZBCmFXpoAA2ouot_EDiOVx5kfc__4ppp6pxqaWO1vy9ZRyVlvvSzXPUnFpPFQosZ1hK0Rd04SkUUcfjB0dbl7EQFJ__er_');"></div>
+</div>
+<h3 class="text-2xl font-bold uppercase">Marcus Chen</h3>
+<p class="text-primary font-bold tracking-widest text-sm uppercase">Hatha &amp; Meditation</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 grayscale hover:grayscale-0 transition-all duration-500 border-4 border-transparent hover:border-primary">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Sarah - Power Yoga instructor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvElLIlhCWFLJ0g7elwXIof73dE1zdRhukXMR3rRoGIWq-t4TK2KDq86E0vKkPWYMgO4LKrN8Tt618MmN5kusPROAWwVduxp1CJyW79Irrj8MYwk4qBSLY5ZrcCB0tAzn6ksJZowaJ4N-brEsc3EOicdXFHgqAE9sE7GKdL_QPVtr8Fc4h6X11-qaZwoJXXvLgCnqajocdlekGSK9kpHw00-kAop3bEukLs0IgLv9R12GUQjNHx48PZ43X9zix7VKdwphXBmlqVl6I');"></div>
+</div>
+<h3 class="text-2xl font-bold uppercase">Sarah Jenkins</h3>
+<p class="text-primary font-bold tracking-widest text-sm uppercase">Power Yoga &amp; Core</p>
+</div>
+</div>
+</section>
+<section class="bg-slate-900 dark:bg-background-dark py-24 px-6 text-white" id="plans">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="text-4xl font-black uppercase tracking-tighter mb-4">Membership Plans</h2>
+<p class="text-slate-400 max-w-xl mx-auto">Choose a plan that fits your commitment level. All plans include access to Yogi Lab facilities and props.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 flex flex-col items-center">
+<span class="text-slate-400 uppercase tracking-widest font-bold text-xs mb-4">Flexible</span>
+<h3 class="text-3xl font-bold mb-6">Monthly</h3>
+<div class="text-5xl font-black mb-6 text-primary">$120<span class="text-lg font-normal text-slate-400">/mo</span></div>
+<ul class="space-y-4 mb-10 text-slate-300 w-full">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Unlimited Classes</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Mat Rental Included</li>
+<li class="flex items-center gap-3 font-bold text-slate-500"><span class="material-symbols-outlined text-sm">cancel</span> Guest Passes</li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-black uppercase hover:bg-primary hover:text-white transition-all">Get Started</button>
+</div>
+<div class="bg-primary p-10 rounded-2xl border-4 border-primary scale-105 shadow-2xl flex flex-col items-center relative overflow-hidden">
+<div class="absolute top-4 right-[-35px] bg-white text-primary font-black py-1 px-12 rotate-45 text-xs uppercase tracking-tighter">Best Value</div>
+<span class="text-white/80 uppercase tracking-widest font-bold text-xs mb-4">Professional</span>
+<h3 class="text-3xl font-bold mb-6">6 Months</h3>
+<div class="text-5xl font-black mb-6">$95<span class="text-lg font-normal text-white/80">/mo</span></div>
+<ul class="space-y-4 mb-10 text-white w-full">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-white text-sm">check_circle</span> Unlimited Classes</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-white text-sm">check_circle</span> Premium Mat Service</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-white text-sm">check_circle</span> 2 Guest Passes / Mo</li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-white text-primary font-black uppercase hover:bg-slate-100 transition-all">Select Plan</button>
+</div>
+<div class="bg-slate-800/50 p-10 rounded-2xl border border-slate-700 flex flex-col items-center">
+<span class="text-slate-400 uppercase tracking-widest font-bold text-xs mb-4">Committed</span>
+<h3 class="text-3xl font-bold mb-6">Annual</h3>
+<div class="text-5xl font-black mb-6 text-primary">$80<span class="text-lg font-normal text-slate-400">/mo</span></div>
+<ul class="space-y-4 mb-10 text-slate-300 w-full">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> All Access</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Private Locker</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 10% Shop Discount</li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-black uppercase hover:bg-primary hover:text-white transition-all">Get Started</button>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 max-w-7xl mx-auto" id="schedule">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-black uppercase tracking-tighter">Weekly Flow</h2>
+<p class="text-slate-500 mt-2">Find the time that works for your discipline.</p>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 w-full md:w-auto">
+<button class="bg-primary text-white px-6 py-2 rounded-full font-bold text-sm uppercase">Mon</button>
+<button class="bg-slate-100 dark:bg-slate-800 px-6 py-2 rounded-full font-bold text-sm uppercase">Tue</button>
+<button class="bg-slate-100 dark:bg-slate-800 px-6 py-2 rounded-full font-bold text-sm uppercase">Wed</button>
+<button class="bg-slate-100 dark:bg-slate-800 px-6 py-2 rounded-full font-bold text-sm uppercase">Thu</button>
+<button class="bg-slate-100 dark:bg-slate-800 px-6 py-2 rounded-full font-bold text-sm uppercase">Fri</button>
+</div>
+</div>
+<div class="space-y-4">
+<div class="group flex flex-col md:flex-row items-center justify-between p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:border-primary transition-all">
+<div class="flex items-center gap-8 w-full md:w-auto">
+<span class="text-3xl font-black text-slate-300 dark:text-slate-700 uppercase">07:00</span>
+<div>
+<h4 class="text-xl font-bold uppercase tracking-tight">Morning Awakening</h4>
+<p class="text-slate-500 text-sm">Vinyasa • 60 min • Instructor: Elena</p>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-8 py-3 rounded-xl bg-slate-900 dark:bg-primary text-white font-bold uppercase text-xs tracking-widest group-hover:bg-primary">Book Class</button>
+</div>
+<div class="group flex flex-col md:flex-row items-center justify-between p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:border-primary transition-all">
+<div class="flex items-center gap-8 w-full md:w-auto">
+<span class="text-3xl font-black text-slate-300 dark:text-slate-700 uppercase">12:30</span>
+<div>
+<h4 class="text-xl font-bold uppercase tracking-tight">Power Core Yoga</h4>
+<p class="text-slate-500 text-sm">Intensity • 45 min • Instructor: Sarah</p>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-8 py-3 rounded-xl bg-slate-900 dark:bg-primary text-white font-bold uppercase text-xs tracking-widest group-hover:bg-primary">Book Class</button>
+</div>
+<div class="group flex flex-col md:flex-row items-center justify-between p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:border-primary transition-all">
+<div class="flex items-center gap-8 w-full md:w-auto">
+<span class="text-3xl font-black text-slate-300 dark:text-slate-700 uppercase">18:00</span>
+<div>
+<h4 class="text-xl font-bold uppercase tracking-tight">Sunset Meditation</h4>
+<p class="text-slate-500 text-sm">Hatha • 75 min • Instructor: Marcus</p>
+</div>
+</div>
+<button class="mt-4 md:mt-0 px-8 py-3 rounded-xl bg-slate-900 dark:bg-primary text-white font-bold uppercase text-xs tracking-widest group-hover:bg-primary">Book Class</button>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark overflow-hidden" id="community">
+<div class="max-w-7xl mx-auto px-6 mb-12">
+<h2 class="text-4xl font-black uppercase tracking-tighter">More Than A Training Space</h2>
+<p class="text-slate-500 mt-2">Join a community built on discipline and shared energy.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 h-[600px]">
+<div class="col-span-2 row-span-2 bg-cover bg-center rounded-3xl" data-alt="Yoga practitioners training together in a large studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6FNSmy9yD85tp3uAo9HQrAiXwjKRVXZP2fwUANShPH9YTegEcdNYNK1PL31eibBmzGaNqIx8syeb-M9AX81K0aCuxIBU_SThh4w_g4qqoYERBSa4ktWVhezG2_4GEgBF7Zmzwqb9hyQVzfCw-O_kW64DS5Polkg2FJd_IQbOkQQNbcWPA5c_fjXYo6cV98hgHucowWIug9bYMLJFHFueFwcqHvuKNOmMuhQudjODaZOHuUDgwELiQPEta43Q3YE6YaIJirs1ykeR');"></div>
+<div class="col-span-1 bg-cover bg-center rounded-3xl" data-alt="Minimalist yoga studio interior" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCC3lwROenFt2mjAbWPXRFSp2aP62EAqGDov57IS0FEWAANAzXYzlmrfexRNtogIfqZAtJO-WL7obBKbrEq_dV1T3H4mqGxpzMFY2QYdTuXsjx546ljRBZDWfpIqhQ2FJtmcRqh-LFt_ovpubH9mrG9MLQwpCn_iHHRzRE5axgbSb9YKSmHALZ5-F4gNPb0r-B6csMVCrugAkF2EBJUpVCnu1F2DPQsJHnicF4ZTkcJfQPVAQ9Z45B5isP7E5V71iynDaAXmkULndRK');"></div>
+<div class="col-span-1 bg-cover bg-center rounded-3xl" data-alt="Community gathered after a yoga session" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBA7k6et-axv_WTduWCknmXbLW4ZUliGE4Z40RtXPoETh2pqRKQ3aChFy8OUnVl_G0moJT6ZMBbz4AdxPDo_Odi_HgoibenKDhQkNxppCRze76HV02fJf1-mN3dyKZxKZ6yHHkMG5R2_LKS-wGR1qn5Rgr-cD61kyrVCp5QASqKFZALkQf8ifxmJ9g61CcPNzgVxdG09EYuyoo0aYmkQh3yRY8fzlgAUwujGELAzK1ZQGybhjeW6xU-Zvx3ezGVBRNywIaNYlLaHSZx');"></div>
+<div class="col-span-2 bg-cover bg-center rounded-3xl" data-alt="Yoga equipment detail in a high contrast setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdSwH7AQFsNOIs0qizGFaa0pHHMZHgt4hyRjIJVD-EN2JYSGjs6uiOqmWdGY0r11PJieL2veuP5A6qSns7Xc3MXP8-5L58GnzcrnsWo0NKlrBZPQexNR4rZcy6G44AO6CG26dzSjaDaWPPXFda41uOGXVQZNuhurtzJbRwTQYlCUKeHl-Kd8_KKU4xRRLrWE9dip3aNEyRhF-XwfZyrvAqlr9EYzZmym1jCWYxTt2GJ4wpsIgMCdsfCJWhOwDggsrpUx-_SX59kWKn');"></div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-950 text-white py-16 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-black tracking-tighter uppercase">YOGI LAB</h2>
+</div>
+<p class="text-slate-400 max-w-sm">A dedicated space for mindfulness, strength, and discipline within the Cali Fitness Lab ecosystem.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest mb-6 text-sm text-primary">Quick Links</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Safety Protocols</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cali Fitness Lab</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest mb-6 text-sm text-primary">Follow Our Flow</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+                © 2024 YOGI LAB BY CALI FITNESS LAB. ALL RIGHTS RESERVED.
+            </div>
+</footer>
+</div>
+</body></html>

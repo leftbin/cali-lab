@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CALI | By The Community, For The Community</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Lexend -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f38320',
+              dark: '#0a0a0a',
+              card: '#121212',
+            }
+          },
+          fontFamily: {
+            sans: ['Lexend', 'sans-serif'],
+          },
+          borderRadius: {
+            'custom': '8px', // Based on ROUND_FOUR
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    
+    /* Background texture overlaying the image */
+    .bg-dots {
+      background-image: radial-gradient(circle, #f38320 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.1;
+    }
+
+    /* Vertical split styling for desktop */
+    @media (min-width: 1024px) {
+      .split-container {
+        height: calc(100vh - 80px); /* Subtract header height */
+      }
+    }
+
+    /* Hover effect for sections */
+    .hero-section {
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-section:hover .section-bg {
+      transform: scale(1.05);
+    }
+
+    .section-bg {
+      transition: transform 0.8s ease-out;
+      background-position: center;
+      background-size: cover;
+      filter: grayscale(40%) brightness(0.4);
+    }
+
+    .hero-section:hover .section-bg {
+      filter: grayscale(0%) brightness(0.6);
+    }
+
+    .cta-button {
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .cta-button:hover {
+      background-color: #ffffff;
+      color: #000000;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="font-sans">
+<!-- BEGIN: MainHeader -->
+<header class="h-20 flex items-center justify-between px-6 lg:px-12 border-b border-white/10 relative z-50 bg-black">
+<div class="flex items-center gap-4">
+<!-- CALI Logo Placeholder based on IMAGE_2/5 icon -->
+<div class="flex items-center" data-purpose="brand-logo">
+<div class="border-2 border-brand-orange rounded-full p-1 mr-3 w-10 h-10 flex items-center justify-center">
+<svg class="w-6 h-6" fill="none" stroke="#f38320" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+</svg>
+</div>
+<span class="text-2xl font-extrabold tracking-tighter">CALI</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-medium">
+<a class="hover:text-brand-orange transition-colors" href="#">PLANS</a>
+<a class="hover:text-brand-orange transition-colors" href="#">TRAINERS</a>
+<a class="hover:text-brand-orange transition-colors" href="#">SCHEDULE</a>
+<a class="hover:text-brand-orange transition-colors" href="#">ABOUT</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-brand-orange text-black px-5 py-2 rounded-custom font-bold text-sm tracking-wide">MEMBER LOGIN</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSplitSection -->
+<main class="split-container flex flex-col lg:flex-row w-full overflow-hidden">
+<!-- CALISTHENICS SIDE -->
+<section class="hero-section flex-1 relative flex items-center justify-center min-h-[50vh] lg:min-h-0 border-b lg:border-b-0 lg:border-r border-white/10 group">
+<!-- Background Image (Placeholder for high-strength move) -->
+<div class="section-bg absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&amp;w=1974&amp;auto=format&amp;fit=crop')] bg-cover"></div>
+<!-- Overlay texture -->
+<div class="bg-dots absolute inset-0 z-10 pointer-events-none"></div>
+<!-- Content -->
+<div class="relative z-20 text-center px-6">
+<h2 class="text-4xl lg:text-6xl font-black mb-4 tracking-tight uppercase leading-tight">
+          Calisthenics:<br/>
+<span class="text-brand-orange">Unleash Your Strength</span>
+</h2>
+<p class="text-gray-300 max-w-md mx-auto mb-8 font-light text-lg">
+          Experiment. Evolve. Repeat. Master your bodyweight in our specialized lab.
+        </p>
+<a class="cta-button inline-block bg-brand-orange text-black font-bold py-4 px-10 rounded-custom text-sm" href="calisthenics-lab.html">
+          Enter the Lab
+        </a>
+</div>
+</section>
+<!-- YOG LAB SIDE -->
+<section class="hero-section flex-1 relative flex items-center justify-center min-h-[50vh] lg:min-h-0 group">
+<!-- Background Image (Placeholder for serene/powerful yoga) -->
+<div class="section-bg absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&amp;w=1840&amp;auto=format&amp;fit=crop')] bg-cover"></div>
+<!-- Overlay texture -->
+<div class="bg-dots absolute inset-0 z-10 pointer-events-none"></div>
+<!-- Content -->
+<div class="relative z-20 text-center px-6">
+<h2 class="text-4xl lg:text-6xl font-black mb-4 tracking-tight uppercase leading-tight">
+          YOG Lab:<br/>
+<span class="text-brand-orange">Intentional Movement</span>
+</h2>
+<p class="text-gray-300 max-w-md mx-auto mb-8 font-light text-lg">
+          Conscious living through disciplined practice. Optimize your energy, from root to crown.
+        </p>
+<a class="cta-button inline-block bg-brand-orange text-black font-bold py-4 px-10 rounded-custom text-sm" href="yog-lab.html">
+          Start Your Flow
+        </a>
+</div>
+</section>
+</main>
+<!-- END: HeroSplitSection -->
+<!-- BEGIN: QuickStats -->
+<section class="bg-brand-dark py-12 px-6 border-y border-white/10" data-purpose="brand-stats">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div>
+<div class="text-brand-orange text-3xl font-bold">5</div>
+<div class="text-xs uppercase tracking-widest text-gray-400 mt-1">Certified Trainers</div>
+</div>
+<div>
+<div class="text-brand-orange text-3xl font-bold">500+</div>
+<div class="text-xs uppercase tracking-widest text-gray-400 mt-1">Transformations</div>
+</div>
+<div>
+<div class="text-brand-orange text-3xl font-bold">3</div>
+<div class="text-xs uppercase tracking-widest text-gray-400 mt-1">Premium Programs</div>
+</div>
+<div>
+<div class="text-brand-orange text-3xl font-bold">6:30AM-9PM</div>
+<div class="text-xs uppercase tracking-widest text-gray-400 mt-1">Daily Batches</div>
+</div>
+</div>
+</section>
+<!-- END: QuickStats -->
+<!-- BEGIN: Footer -->
+<footer class="bg-black py-12 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Logo, Tagline and Copyright -->
+<div class="text-center md:text-left">
+<div class="text-2xl font-extrabold mb-1 tracking-tighter">CALI</div>
+<p class="text-brand-orange text-xs font-semibold uppercase tracking-widest mb-2">By The Community, For The Community</p>
+<p class="text-gray-400 text-sm mb-1">Hitec City, Hyderabad &bull; +91 88267 62234</p>
+<p class="text-gray-500 text-sm">&copy; 2025 CALI Fitness Lab. All rights reserved.</p>
+</div>
+<!-- Brochure Downloads -->
+<div class="flex flex-col items-center gap-3">
+<span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Download Brochures</span>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-brand-orange transition-colors text-sm font-medium border border-white/10 px-4 py-2 rounded-custom" href="brochures/cali-lab-brochure.pdf" download>Calisthenics Lab</a>
+<a class="text-gray-400 hover:text-brand-orange transition-colors text-sm font-medium border border-white/10 px-4 py-2 rounded-custom" href="brochures/yog-lab-brochure.pdf" download>YOG Lab</a>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex items-center gap-6">
+<a class="text-gray-400 hover:text-brand-orange transition-colors" data-purpose="social-icon" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-brand-orange transition-colors" data-purpose="social-icon" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
